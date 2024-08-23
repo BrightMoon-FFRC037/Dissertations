@@ -1,0 +1,153 @@
+%\documentclass{article}
+\documentclass[UTF8]{ctexart}
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{常微分方程（ODE）的分类}
+\author{Bright Moon}
+
+\begin{document}
+\maketitle
+\section{常微分方程（ODE）的分类框架}
+\subsection{阶数与线性的辨析}
+\[F(x,y^{(0)},y^{(1)},y^{(2)},...,y^{(n)})=0\]
+\subsubsection{阶数——导数的阶数}
+阶数取决于导数$y^{(n)}$的最高阶数$n$。上述微分方程为\textbf{$n$阶}常微分方程。
+\subsubsection{线性——导数的幂次}
+如果上述微分方程可以写成关于各阶导数$(y^{(i)})^{k_i}$的多项式形式：\[y^{(n)}+a_1(x)y^{(n-1)}+a_2(x)y^{(n-2)}+...+a_n(x)y^{(0)}=f(x)\]
+\par 所涉及的各阶导数$(y^{(i)})^{k_i}$在方程中的幂次$k_i$不超过一次，则是\textbf{线性}常微分方程。
+\par 进一步，如果$f(x)=0$，则称线性方程是\textbf{齐次}的，否则为\textbf{非齐次}的。
+\par 如果各阶导数前的系数$a_i(x)$不依赖于$x$，是常数$a_i$，则称线性方程是\textbf{常系数}。
+
+\subsection{常微分方程与常微分方程组的辨析}
+\subsubsection{“常”/“偏”——函数自变量的个数}
+\textbf{一个}常微分方程的未知函数是一个一元函数$f(x)$。
+\par \textbf{一个}偏微分方程的未知函数是一个多元函数$f(x_1,...,x_n)$。
+\subsubsection{“组”——函数的个数}
+常微分方程\textbf{组}的未知函数是多个一元函数（一个一元向量函数）\[v_1(t),...,v_n(t)\] \[\text{或}\quad \vec  v(t) = (v_1(t),...,v_n(t))\]
+
+\subsection{可以用初等积分法求解的常微分方程（ODE）的分类}
+\begin{enumerate}
+    \item 一阶
+    \begin{enumerate}
+        \item 线性大类
+        \begin{enumerate}
+            \item 线性齐次\[y'+P(x)y=0\]
+
+
+        \end{enumerate}
+        \begin{enumerate}
+            \item 线性非齐次\[y'+P(x)y=Q(x)\]
+            \item 伯努利方程（仍然是一阶的，但不是线性的）（可以化为线性方程）\[y'+P(x)y=Q(x)y^{\alpha}\]
+        
+        \end{enumerate}
+        \item 伯努利方程（仍然是一阶的，但不是线性的）（可以化为线性方程）\[y'+P(x)y=Q(x)y^{\alpha}\]
+        \item 变量分离大类（包含线性与非线性）
+        \begin{enumerate}
+            \item 纯粹变量分离型\[y'=f(x)g(y)\]
+            \item 复合一次函数型\[y'=f(ax+by+c)\]
+            \item 齐次函数型\[y'=f(x,y)=h(\frac{y}{x})\]
+            \item 一次分式型\[y'=f(\frac{a_1x+b_1y+c_1}{a_2x+b_2y+c_2})\]
+
+        \end{enumerate}
+        \item 可以降为一阶的大类（包含线性与非线性）
+        \begin{enumerate}
+            \item 二阶缺项
+            \begin{enumerate}
+                \item 不显含$y$\[F(x,y',y'')\]
+                \item 不显含$x$\[F(y,y',y'')\]
+
+            \end{enumerate}
+
+        \end{enumerate}
+        \item 全微分方程（恰当方程）大类
+        \begin{enumerate}
+            \item 纯粹的全微分方程\[y'=-\frac{P(x,y)}{Q(x,y)}\]\[\text{或：}\ P(x,y)dx +Q(x,y)dy=0\]\[\text{要求：}\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}\]
+            \item 乘积分因子后可化全微分的方程\[M(x,y)dx +N(x,y)dy=0\]\[\mu M(x,y)dx +\mu N(x,y)dy=0\]\[\text{要求：}\frac{\partial (\mu M)}{\partial y}=\frac{\partial(\mu N)}{\partial x}\]
+
+\end{enumerate}
+    \end{enumerate}
+    \item 二阶
+    \begin{enumerate}
+        \item 常系数线性方程
+        \begin{enumerate}
+            \item 齐次（特征根法求通解）\[y''+py'+qy=0\]\[\lambda ^2+p\lambda+q=0\]
+            \begin{itemize}
+                \item 相异一重实根\[\lambda _1 \neq \lambda _2\]
+                \item 二重实根\[\lambda _1 = \lambda _2\]
+                \item 一重共轭复根\[\lambda = \alpha \pm \beta i\]
+            \end{itemize}
+            \item 非齐次（可以待定系数的类型）（待定系数求特解）\[y''+py'+qy=f(x)\]
+            \begin{enumerate}
+                \item 多项式\[f(x)=P_n(x)\]
+                \begin{itemize}
+                    \item 0不是特征根
+                    \item 0是单根
+                    \item 0是重根
+                \end{itemize}
+                \item 指数函数\[f(x)=ae^{\alpha x}\]
+                \begin{itemize}
+                    \item \(\alpha\)不是特征根
+                    \item \(\alpha\)是单根
+                    \item \(\alpha\)是重根
+                \end{itemize}
+                \item 三角函数\[f(x)=a\cos \beta x +b\sin \beta x\]
+                \begin{itemize}
+                    \item \(\pm \beta i\)不是特征根
+                    \item \(\pm \beta i\)是特征根
+                \end{itemize}
+                \item 多项式乘指数函数\[f(x)=P_n(x)e^{\alpha x}\]
+                \begin{itemize}
+                    \item \(\alpha\)不是特征根
+                    \item \(\alpha\)是单根
+                    \item \(\alpha\)是重根
+                \end{itemize}
+                \item 多项式乘指数函数乘三角函数\[f(x)=P_n(x)e^{\alpha x}(a\cos \beta x +b\sin \beta x)\]
+                \begin{itemize}
+                    \item \(\alpha \pm \beta i\)不是特征根
+                    \item \(\alpha \pm \beta i\)是特征根
+                \end{itemize}
+
+            \end{enumerate}
+            \item 非齐次（不可以待定系数求特解的类型）（常数变易法直接求通解）\[y''+py'+qy=f(x)\]
+            \item 欧拉方程（仍然是$n$阶线性的，但不是常系数的）（可以化为常系数）\[a_0x^2y^{(2)}+a_1x^1y^{(1)}+a_3x^0y^{(0)}=f(x)\]
+        \end{enumerate}
+        \item 欧拉方程（仍然是$n$阶线性的，但不是常系数的）（可以化为常系数）\[a_0x^2y^{(2)}+a_1x^1y^{(1)}+a_3x^0y^{(0)}=f(x)\]
+    
+    \end{enumerate}
+    \item 高阶
+    \begin{enumerate}
+        \item 常系数线性方程
+        \begin{enumerate}
+            \item 齐次（特征根法求通解）\[y^{(n)}+a_1y^{(n-1)}+a_2y^{(n-2)}+...+a_ny^{(0)}=0\]
+            \begin{itemize}
+                \item 一重实根
+                \item $k$重实根$(k>1)$
+                \item 一重共轭复根
+                \item m重共轭复根$(m>1)$
+            \end{itemize}
+            \item 非齐次\[y^{(n)}+a_1y^{(n-1)}+a_2y^{(n-2)}+...+a_ny^{(0)}=f(x)\]
+            \item 欧拉方程（仍然是$n$阶线性的，但不是常系数的）（可以化为常系数）\[a_0x^ny^{(n)}+a_1x^{n-1}y^{(n-1)}+...+a_nx^0y^{(0)}=f(x)\]
+        \end{enumerate}
+        \item 欧拉方程（仍然是$n$阶线性的，但不是常系数的）（可以化为常系数）\[a_0x^ny^{(n)}+a_1x^{n-1}y^{(n-1)}+...+a_nx^0y^{(0)}=f(x)\]
+        \end{enumerate}
+    \end{enumerate}
+\subsection{一阶线性常系数常微分方程组}
+\begin{enumerate}
+    \item 齐次\[\vec v(t) = A \vec r(t)\]\[\text{其中}A\text{为常数系数构成的矩阵}\]
+    \item 非齐次\[\vec v(t) = A \vec r(t)+\vec \beta (t)\]\[\text{其中}A\text{为常数系数构成的矩阵}\]
+
+\end{enumerate}
+
+
+\end{document}

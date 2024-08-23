@@ -1,0 +1,126 @@
+%\documentclass{article}
+\documentclass[UTF8]{ctexart}
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{常数变易法何以奏效}
+\author{Bright Moon}
+
+\begin{document}
+\maketitle
+
+
+
+\section{二阶常系数线性微分方程的降阶}
+\begin{equation}\label{eq:1}
+    y''+py'+qy=f(x)
+\end{equation}
+\[\lambda ^2 +p\lambda+q=0\\\]
+\[-p=\lambda_1+\lambda_2;\quad q=\lambda_1\lambda_2\]
+代入公式\ref{eq:1}中，可以得到下式：
+\[y''-\lambda _1y'-\lambda _2y'+\lambda _1 \lambda _2y=f(x)\]
+\begin{equation}\label{eq:2}
+(y''-\lambda _1y')-\lambda _2(y'-\lambda _1y)=f(x)
+\end{equation}
+令$z=y'-\lambda _1y$，代入公式\ref{eq:2}中得到:
+\begin{equation}\label{eq:3}
+z'-\lambda _2z=f(x)
+\end{equation}
+这一步实现了，二阶常系数线性微分方程，向一阶常系数线性微分方程的降阶。
+\section{一阶常系数线性微分方程的常数变易}
+令积分因子$\mu=e^{-\lambda _2x}$
+\[\mu z'-\lambda _2 \mu z = \mu f(x)\]
+\[z'e^{-\lambda _2x}-\lambda _2e^{-\lambda _2x}z=e^{-\lambda _2x}f(x)\]
+\[(ze^{-\lambda _2x})'=e^{-\lambda _2x}f(x)\]
+\[ze^{-\lambda _2x} = \int e^{-\lambda _2x}f(x)dx\]
+\[z =e^{\lambda _2x} \int e^{-\lambda _2x}f(x)dx\]
+\begin{equation}\label{eq:z}
+    z =e^{\lambda _2x}\left ( \int _{x_0} ^x e^{-\lambda _2t}f(t)dt+C_1\right )
+\end{equation}
+
+其中后半部分就是常数$C_1$经过变易后的形式$C_1(x)$
+\[C_1(x)=\left ( \int _{x_0} ^x e^{-\lambda _2t}f(t)dt+C_1\right )\]
+当原方程是齐次方程的时候，$f(t)=0$，进而有：
+\[C_1(x)=\left ( \int _{x_0} ^x e^{-\lambda _2t}f(t)dt+C_1\right )=\left ( \int _{x_0} ^x e^{-\lambda _2t}0dt+C_1\right )=0+ C_1=C_1\]
+变易的常数退化为原来的形式（最后两步把新产生的常数合并到了原来的$C_1$中，仍记为$C_1$）。
+\section{二阶常系数线性微分方程的常数变易}
+\[y''+py'+qy=f(x)\]
+等价于：
+\[(y''-\lambda _1y')-\lambda _2(y'-\lambda _1y)=f(x)\]
+等价于：
+\[\begin{cases}
+z'-\lambda _2z=f(x)\\
+y'-\lambda _1y=z(x)\\
+\end{cases}\]
+用同样的，处理一阶的方法求解$y(x)$得到：
+\[y = e^{\lambda _1 x}\int z e^{-\lambda _1 x}dx\]
+\[y = e^{\lambda _1 x}\left (\int_{x_0}^{x} z e^{-\lambda _1 s}ds+C_2\right )\]
+再代入求得的$z(x)$（公式\ref{eq:z}）得到：
+
+\[y = e^{\lambda _1 x}\left (\int_{x_0}^{x} e^{\lambda _2s}\left ( \int _{s_0} ^s e^{-\lambda _2t}f(t)dt+C_1\right ) e^{-\lambda _1 s}ds+C_2\right )\]
+整理一下：
+\[y = e^{\lambda _1 x}\left (\int_{x_0}^{x} \left ( \int _{s_0} ^s e^{-\lambda _2t}f(t)dt+C_1\right ) e^{\lambda _2s}e^{-\lambda _1 s}ds+C_2\right )\]
+\begin{equation}\label{eq:key}
+    y = e^{\lambda _1 x}\left (\int_{x_0}^{x} \left ( \int _{s_0} ^s e^{-\lambda _2t}f(t)dt+C_1\right ) e^{(\lambda _2-\lambda _1 )s}ds+C_2\right )
+\end{equation}
+\subsection{齐次情形$f(t)=0$}
+\subsubsection{相异两根$\lambda _2 \neq \lambda _1$}
+公式\ref{eq:key}可以化简为：
+\[y = e^{\lambda _1 x}\left (\int_{x_0}^{x} \left ( \int _{s_0} ^s 0dt+C_1\right ) e^{(\lambda _2-\lambda _1 )s}ds+C_2\right )\]
+\begin{equation}\label{eq:homo}
+y = e^{\lambda _1 x}\left (\int_{x_0}^{x} C_1 e^{(\lambda _2-\lambda _1 )s}ds+C_2\right )
+\end{equation}
+把定积分多出来的常数，合并到$C_2$里构成新的$\tilde C_2$：
+\[y = e^{\lambda _1 x}\left (\frac{C_1}{\lambda _2-\lambda _1}e^{(\lambda _2-\lambda _1 )x}+\tilde C_2\right )\]
+
+把$\lambda _1,\ \lambda _2,\ C_1$合并成为新的常数，$\tilde C_1$：
+\[y=\tilde C_1e^{\lambda _2x}+\tilde C_2e^{\lambda _1 x}\]
+这种思路比先猜到两个解，然后再验证线性无关性（Wronski行列式非零），或者验证两个常数的独立性，要自然顺畅很多。
+\subsubsection{相同两根$\lambda _2 =\lambda _1$}
+这个时候公式\ref{eq:homo}可以化简为：
+\[y = e^{\lambda _1 x}\left (\int_{x_0}^{x} C_1 e^{0}ds+C_2\right )\]
+\[y = e^{\lambda _1 x}\left (\int_{x_0}^{x} C_1 ds+C_2\right )\]
+把定积分多出来的常数，合并到$C_2$里构成新的$\tilde C_2$：
+\[y = e^{\lambda _1 x}\left (C_1x +\tilde C_2\right )\]
+最终有：
+\[y= C_1xe^{\lambda _1x}+\tilde C_2e^{\lambda _1 x}\]
+
+这就解释了为什么“遇事不决要乘一个$x$”。让这种无厘头的操作合乎于推理。
+\subsection{非齐次情形$f(t)\neq 0$}
+对公式\ref{eq:key}进行化简整理，把涉及到常数的部分往外提，得到：
+\[y=\left(\int^x_{x_0}\left(\int_{s_0}^s f(t)e^{-\lambda _2t}dt\right)e^{(\lambda _2-\lambda _1)s}ds\right)e^{\lambda _1x}+\left(C_1\int^x_{x_0}e^{(\lambda _2-\lambda _1)s}ds\right)e^{\lambda _1x}+C_2e^\lambda _1 x\]
+其中后两项，就是公式\ref{eq:homo}中的形式，所以可以借用上面的结论，化简后两项。
+\subsubsection{相异两根$\lambda _2 \neq \lambda _1$}
+\[y=\left(\int^x_{x_0}\left(\int_{s_0}^s f(t)e^{-\lambda _2t}dt\right)e^{(\lambda _2-\lambda _1)s}ds\right)e^{\lambda _1x}+\tilde C_1e^{\lambda _2x}+\tilde C_2e^{\lambda _1 x}\]
+其中第一项负责让两个常数$\tilde C_1,\ \tilde C_2$发生变易，成为$\tilde C_1(x),\ \tilde C_2(x)$
+\subsubsection{相同两根$\lambda _2 = \lambda _1$}
+\[y=\left(\int^x_{x_0}\left(\int_{s_0}^s f(t)e^{-\lambda _2t}dt\right)e^{0}ds\right)e^{\lambda _1x}+ C_1xe^{\lambda _1x}+\tilde C_2e^{\lambda _1 x}\]
+\[y=\left(\int^x_{x_0}\left(\int_{s_0}^s f(t)e^{-\lambda _2t}dt\right)ds\right)e^{\lambda _1x}+ C_1xe^{\lambda _1x}+\tilde C_2e^{\lambda _1 x}\]
+同样地，第一项负责让两个常数$\tilde C_1,\ \tilde C_2$发生变易，成为$ C_1(x),\ \tilde C_2(x)$。\textbf{这就解释了常数变易法，为什么会是一种可行的方法，顺着什么样的思路可以想到常数变易法。}解微分方程，一些看起来必须要猜的结论，其实用推理的方法也可以得到。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
