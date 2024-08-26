@@ -7,4 +7,4 @@ In the following article, I collected the related descriptions in three of my te
 
 Here is that article, [温度是什么(What is Temperature ?)](https://zhuanlan.zhihu.com/p/686354600).
 
-![1](./Figures/R-C.png)
+![1](./Figures/temperature.png)
