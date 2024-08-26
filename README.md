@@ -31,3 +31,10 @@ Walking through the basic theory of science is an enjoyment. It is an oppertunit
 
 ## When to Update
 I will update this reopsitory "Dissertations" when I take lessons in unversity as well as when I learn something enlightening. Thus, I view this repo as a record but also a platform for sharing that piece of enjoyment.
+
+## Supplements
+As you can see, the format of the documents is not uniform. The reason is that they were written in different period with various media. 
+* The documents written in Autumn 2023 are scanned version of A4 papers where I wrote down them by hands.
+* While in Spring 2024 I explored several platforms such as ZhiHu with different formats including LaTeX, markdown, pdf, A4 paper etc.
+
+When I was struggling to put them in an organized way, Git and GitHub occurs to me. I decide to use this version control system to store my dissertations. Please forgive me the unsystematic file formats and I will try to use mardown uniformly in the future. Some of the markdown files will lead you to ZhiHu where I first published these articles.
