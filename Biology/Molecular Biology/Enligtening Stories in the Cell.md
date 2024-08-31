@@ -11,7 +11,7 @@ Those enligtening parts of biology can not be discovered or understood without t
 
 That is the reason why I set up the file to record such thoughts and stories.
 
-# Why DNA Replicates from 3' to 5'
+# Why DNA Replicates from 5' to 3' ?
 ## Logic
 * Engergy, which is like Olimpic Flame relayed by athletes, is stored at 5' end of each nuleoside. **(Root of the asymmetry)**
 * If there is a mistake, self-correction will be carried out by exonulease subunit or protein domain of DNA Polymerase, which leads to the error nuleoside to by cleaved off the strand.
@@ -23,4 +23,34 @@ That is the reason why I set up the file to record such thoughts and stories.
 ## Inspiration
 * Both algorithm work in normal case, but one of them has severe disadvantage considering mistakes and correction.
 * The independency allows for more convenient correction, which increases accuracy.
+## Connections
+* 
+    * Correction mechanism implies the direction of replication: 5' to 3'.
+    * Reason: The Old Can be Removed.
+* 
+    * It also implies the RNA primer produced by DNA primase is needed prior to DNA polymerase.
+    * Reason: The Subject to be Shecked Exists.
+
+# Why Each Region of the DNA is Replicated Once and Only Once ?
+## Logic
+* Replication Initiation is **separated into two sequential steps** in eukaryotes.
+    * Loading of Helicase. In $G_1$ phase when kinase activity is low.
+    * Activating of Helicase. In $S$ phase when kinase activity is high.
+
+* The kinase activity changes from low to high chronologically.
+
+* Each replication origin has at most one chance to form ORC-DNA complex and gets helicase. (Mechanism 1)
+
+* Besides, any ORC-DNA complex passed by a replication fork is inactivated. (Mechanism 2)
+
+## Inspiration
+
+* To prevent the accordingly unactivated to be activated.
+    * Just one opportunity to get activated.
+    * Mechanism 1: Additional requirements (steps).
+* To prevent the already activated to be activated again.
+    * Deactivate the already activated one.
+    * Mechanism 2
+* The **chronologically changing environment makes the process irreversible**, which ensures firing once and only once.
+
 
