@@ -53,4 +53,16 @@ That is the reason why I set up the file to record such thoughts and stories.
     * Mechanism 2
 * The **chronologically changing environment makes the process irreversible**, which ensures firing once and only once.
 
+# The Supercoils Caused by RNA Polymerse is Useful !
+
+## Logic
+* The elongation of RNA Polymerse builds up tension in DNA causing supercoil of it.
+* The supercoil can facilitate the partial unwrapping of the DNA in nuleosomes.
+
+## Inspiration
+* **Productive use of cast-off things** is an eternal theme in the natrual world and there are several common forms of this kind of utilization:
+  * Reuse the **energy (E)** especially heat.
+  * Reuse the **materials (m)** especially in chemical industry.
+  * Reuse the **force (F)** or **moment (M)** which occurs to me firstly in this case. 
+
 
