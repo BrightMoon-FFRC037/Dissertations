@@ -65,4 +65,44 @@ That is the reason why I set up the file to record such thoughts and stories.
   * Reuse the **materials (m)** especially in chemical industry.
   * Reuse the **force (F)** or **moment (M)** which occurs to me firstly in this case. 
 
+# Transporting Cargo through Barrier need Intermediary and Recycle
+## Examples
+* **cholesterol** *through* cell membrane
+  * cell membrane
+    * LDL receptor
+  * intermediary
+    * LDL low density lipoprotein
+      * bind to cholesterol in blood
+      * release cholesterol in endosome
+      * LDL itself is degraded in endosome
+  * cholesterol
+* **Iron** *through* cell membrane
+  * cell membrane
+    * transferrin receptor
+  * intermediary
+    * transferrin
+      * bind to iron at neutral pH in blood
+      * release iron at acidic pH in endosome
+      * recycle of transferrin by pH *difference*
+  * iron
+* **nuclear proteins** *through* nuclear pores
+  * nuclear pores
+    * NPC nuclear pore comlex meshwork
+    * nuclear bascket
+  * intermediary
+    * nuclear import receptor (bind to cargo)
+    * recycle of import receptor by Ran-GTP and Ran-GDP
+    * Ran-GTP (release cargo)
+    * recycle of Ran-GTP by 
+      * Ran-GAP (GTPase-acitvating protein)
+      * Ran-GEF (GTP excahnge factor)
+  * nuclear proteins 
+    * nuclear locolization signal
+  
+## Logic
+> When the cell wants to transport C(cargo) through B(barrier) there must be a pair of opposite processes,
+> one of them load the cargo while the other one release the cargo.
+> That reflects a reversible binding process, which must be carried out at different conditions.
+> For example the pH differences and the existance of Ran-GAP and Ran-GTP.
+> Meanwhile, how to maintain that difference is another problem including the proton pump and recycle of Ran-GTP...
 
