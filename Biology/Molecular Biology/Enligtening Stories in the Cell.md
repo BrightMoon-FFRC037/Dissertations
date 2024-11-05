@@ -7,19 +7,19 @@ Biology only left me so many things to remember rather than deriving them with l
 
 What amazing in biology is not the facts, but the reasons behind those facts as well as the principles underlines those meticulous and well disigned mechanisms.
 
-Those enligtening parts of biology can not be discovered or understood without thinking and reflecting. And once I realize them, I find those priciple is universial, not limited to biology itself.
+Those enlightening parts of biology can not be discovered or understood without thinking and reflecting. And once I realize them, I find those priciple is universial, not limited to biology itself.
 
 That is the reason why I set up the file to record such thoughts and stories.
 
 # Why DNA Replicates from 5' to 3' ?
 ## Logic
-* Engergy, which is like Olimpic Flame relayed by athletes, is stored at 5' end of each nuleoside. **(Root of the asymmetry)**
+* Energy, which is like Olimpic Flame relayed by athletes, is stored at 5' end of each nuleoside. **(Root of the asymmetry)**
 * If there is a mistake, self-correction will be carried out by exonulease subunit or protein domain of DNA Polymerase, which leads to the error nuleoside to by cleaved off the strand.
 * 
-    * 5'$\rightarrow$ 3': the energy is carried by new members (next one). Each for itself, from the aspect of energy.
-    * 3'$\rightarrow$ 5': the energy is carried by old members (last one). Each for the next and each relies on the last, from the aspect of energy.
-* The necessity of energy (triphosphte in 5' end) entails the old one carring energy cannot be cut off the strand in the case of 3'$\rightarrow$ 5', otherwise the replication will terminate here.
-* The 5'$\rightarrow$ 3' mode allows removing any nuleoside added earlier without worrying about energy, since each nuleoside carries energy for itself.
+    * 5' $\rightarrow$ 3': the energy is carried by new members (next one). Each for itself, from the aspect of energy.
+    * 3' $\rightarrow$ 5': the energy is carried by old members (last one). Each for the next and each relies on the last, from the aspect of energy.
+* The necessity of energy (triphosphate in 5' end) entails the old one carring energy cannot be cut off the strand in the case of 3'$\rightarrow$ 5', otherwise the replication will terminate here.
+* The 5' $\rightarrow$ 3' mode allows removing any nucleoside added earlier without worrying about energy, since each nuleoside carries energy for itself.
 ## Inspiration
 * Both algorithm work in normal case, but one of them has severe disadvantage considering mistakes and correction.
 * The independency allows for more convenient correction, which increases accuracy.
@@ -29,7 +29,7 @@ That is the reason why I set up the file to record such thoughts and stories.
     * Reason: The Old Can be Removed.
 * 
     * It also implies the RNA primer produced by DNA primase is needed prior to DNA polymerase.
-    * Reason: The Subject to be Shecked Exists.
+    * Reason: The Subject to be Checked Exists.
 
 # Why Each Region of the DNA is Replicated Once and Only Once ?
 ## Logic
@@ -45,7 +45,7 @@ That is the reason why I set up the file to record such thoughts and stories.
 
 ## Inspiration
 
-* To prevent the accordingly unactivated to be activated.
+* To prevent the accordingly inactivated to be activated.
     * Just one opportunity to get activated.
     * Mechanism 1: Additional requirements (steps).
 * To prevent the already activated to be activated again.
@@ -53,10 +53,10 @@ That is the reason why I set up the file to record such thoughts and stories.
     * Mechanism 2
 * The **chronologically changing environment makes the process irreversible**, which ensures firing once and only once.
 
-# The Supercoils Caused by RNA Polymerse is Useful !
+# The Supercoils Caused by RNA Polymerase is Useful !
 
 ## Logic
-* The elongation of RNA Polymerse builds up tension in DNA causing supercoil of it.
+* The elongation of RNA Polymerase builds up tension in DNA causing supercoil of it.
 * The supercoil can facilitate the partial unwrapping of the DNA in nuleosomes.
 
 ## Inspiration
@@ -87,22 +87,22 @@ That is the reason why I set up the file to record such thoughts and stories.
   * iron
 * **nuclear proteins** *through* nuclear pores
   * nuclear pores
-    * NPC nuclear pore comlex meshwork
-    * nuclear bascket
+    * NPC nuclear pore complex meshwork
+    * nuclear basket
   * intermediary
     * nuclear import receptor (bind to cargo)
     * recycle of import receptor by Ran-GTP and Ran-GDP
     * Ran-GTP (release cargo)
     * recycle of Ran-GTP by 
-      * Ran-GAP (GTPase-acitvating protein)
-      * Ran-GEF (GTP excahnge factor)
+      * Ran-GAP (GTPase-activating protein)
+      * Ran-GEF (GTP exchange factor)
   * nuclear proteins 
-    * nuclear locolization signal
+    * nuclear localization signal
   
 ## Logic
 > When the cell wants to transport C(cargo) through B(barrier) there must be a pair of opposite processes,
 > one of them load the cargo while the other one release the cargo.
 > That reflects a reversible binding process, which must be carried out at different conditions.
-> For example the pH differences and the existance of Ran-GAP and Ran-GTP.
+> For example the pH differences and the existence of Ran-GAP and Ran-GTP.
 > Meanwhile, how to maintain that difference is another problem including the proton pump and recycle of Ran-GTP...
 
