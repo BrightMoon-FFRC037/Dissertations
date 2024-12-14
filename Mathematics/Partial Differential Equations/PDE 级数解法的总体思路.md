@@ -163,12 +163,15 @@ Bessel方程来自Helmholtz方程在柱坐标系下分离变量，半径方向�
 >$$
 \sin(\omega x) \sim J_\nu(x)
 >$$
+
 >$$
 \cos(\omega x) \sim N_\nu(x)
 >$$
+
 >$$
 e^{i\omega x} \sim H^{(1)}_\nu(x)
 >$$
+
 >$$
 e^{-i\omega x} \sim H^{(2)}_\nu(x)
 >$$
