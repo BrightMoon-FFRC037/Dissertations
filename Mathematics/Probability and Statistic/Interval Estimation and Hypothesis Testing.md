@@ -15,11 +15,23 @@
 补充一下，关于等号的检验，都可以修正转化为对不等号的检验，相当于和临界值比较之前，进行了不等式放缩。
 
 ## 服从 $N(0,1)$ 分布的检验统计量
+很多问题，只要样本量足够大，都可以近似用标准正态分布检验。
 ### 一个正态总体的期望值检验（已知方差）
 已知 $\sigma^2,H_0:\mu=\mu_0$
 
 $$
 N=\frac{\bar X-\mu}{\sqrt{\frac{\sigma^2}{n}}}=\frac{\bar X-\mu_0}{\sqrt{\frac{\sigma^2}{n}}}\sim N(0,1)
+$$
+
+### 两个 Bernoulli 总体的成功率（比率）检验
+$H_0: p_1=p_2$
+
+$$
+\hat p_i = \frac{1}{n_1}\sum_{i}^{n_1} X_i=\frac{S_i}{n_1}
+$$
+
+$$
+\zeta = \frac{\hat p_1-\hat p_2-(p_1-p_2)}{\sqrt{\frac{\hat p_1(1-\hat p_1)}{n_1}+\frac{\hat p_2(1-\hat p_2)}{n_2}}}=\frac{\hat p_1-\hat p_2}{\sqrt{\frac{\hat p_1(1-\hat p_1)}{n_1}+\frac{\hat p_2(1-\hat p_2)}{n_2}}}\sim N(0,1)
 $$
 
 ## 服从 $\chi^2$ 分布的检验统计量
@@ -121,6 +133,7 @@ $$
 
 其中的 $m$ 根据 Behrens-Fisher 问题给出的近似值代入。
 
-### 成功率（比率）的假设检验
+### 一个 Bernoulli 总体成功率（比率）的假设检验
+具体比较复杂，但是临界值的计算涉及到 $F$ 分布。
 
 
