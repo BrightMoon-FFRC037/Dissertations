@@ -21,3 +21,24 @@ In this document, I want to collect some topics and examples mentioned in class
   * change what is represented online
   * in a social context, respond to others
   * computer games as an example versus narratives
+# Machine Translation Literacy and Machine Translation Ethics
+* proliferation of literacy
+* machine translation literacy and ethics
+  * how MT works
+  * change MT face
+    * ambiguity
+      * anaphora
+      * co-reference
+      * metaphor
+    * bias
+      * pre-existing
+        * disfavor the generation of feminine form (vs masculine form and neuter form)
+      * technical
+      * emergent
+    * transparency
+    * privacy or confidentiality
+    * tips
+      * proper punctuation
+      * relevant context and additional info
+  * whether, when, where, and how MT can be used
+  * a cognitive issue, rather than a technical issue
