@@ -37,9 +37,9 @@
   * 从零输入响应可以求初始状态
 
 ## Fourier 级数展开
-* 能量与Parseval定理
+* 能量/功率与Parseval定理
 ## Fourier 正逆变换
-* 能量与Parseval定理？
+* 能量与Parseval定理
 ## Laplace 正逆变换
 ## z 变换
 ### 正变换
