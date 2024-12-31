@@ -685,7 +685,9 @@ $$
 
 
 $$
+
 u(r,\theta,t)=\sum_{i=1}^{+\infty}\sum^{+\infty}_{m=0}C_{mi}T_{1mi}(t)J_m(k_{mi}r)\cos(m\theta)+\sum_{i=1}^{+\infty}\sum^{+\infty}_{m=1}D_{mi}T_{2mi}(t)J_m(k_{mi}r)\sin(m\theta)
+
 $$
 
 
