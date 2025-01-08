@@ -88,6 +88,73 @@ The mechanisms are shown below
       * syntactic rules
   * NMT: neural machine translation
 # *Telegraph* Morse Code and Global Connectivity
+* logographic writing and Morse code
+  * hyper-mediation
+  * semiotic sovereignty
+* news objectivity and subjective will
+  * behind any articles is an institution
+  * a cycle of power
+  * self-interest
 # *Typewriter* Mind and Style
+* Christopher Sholes
+  * practical typewriter for general purpose
+* Qwerty keyboard
+* Dvorak keyboard
+  * head start 
+  * path dependency
+* Morse code
+* Mingkuai Typewriter
+* impact of typewriter
+  * commercially
+  * linguistically: writing style
+  * socially: women empowerment
+    * social liberation of women
+  * ideologically: mind
+  * professionally: document standardization
+  * 
 # *Printing* Stability and Variability
+* in China
+  * block printing
+  * movable type printing
+  * Feng Dao
+    * Five dynasties and ten kingdoms
+    * first large scale publication
+  * Bi Sheng
+    * Song dynasty
+    * movable type
+  * Wang Zhen
+    * revolving wheel for movable type
+    * bronze movable type
+* in Europe
+  * manuscripts and scribes
+  * Gutenberg
+    * inventor of the printing press in Europe
+    * industrialize printing in Europe
+    * Gothic type
+    * Antiqua-Fraktur dispute/debate dividing along ideological and political lines
+  * printing and urban development fed both ways
+    * commercial printing - rising technologies, industries and professions
+    * demand for products
+  * Caxton
+    * print in vernacular
+    * adopted London dialect
+    * homogenize regional dialect in English
 # Language *Writing* and Literacy in Society
+* western attempts to Romanization of Chinese
+  * Wade-Giles system
+  * post office system
+* Chinese attempts
+  * ZhuyinFuhao
+  * Pinyin
+* script simplification
+
+# Interaction of *Writing* and Language
+* decipherment of Linear B
+  * word and letter patterns
+  * entropy
+* decipherment of Egyptian Hieroglyphs
+  * Hieroglyph
+  * Demotic
+  * Greek
+  * Champollion
+  * Thomas Young
